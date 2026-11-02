@@ -1,0 +1,18 @@
+name: PvPBetting
+version: 1.0
+main: com.thealleysmp.pvpbetting.PvPBetting
+api-version: "1.13"
+depend: [Vault]
+commands:
+  bet:
+    description: Open the betting menu
+  payout:
+    description: Distribute winnings to the winning team
+    permission: pvpbetting.admin
+    permission-message: "§cYou do not have permission to distribute payouts."
+  refund:
+    description: Refund all active bets if the event is cancelled
+    permission: pvpbetting.admin
+    permission-message: "§cYou do not have permission to refund bets."
+  pool:
+    description: Check the total active betting pool
